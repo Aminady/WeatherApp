@@ -1,0 +1,7 @@
+When it's raining {
+    background: #e6e6e4;
+    color: black;
+    <img class="sun" src="../Icon/lightrainshowers_day.svg" alt="Sun">
+
+} 
+    

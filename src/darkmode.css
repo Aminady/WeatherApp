@@ -1,0 +1,41 @@
+:root.light {
+    --border-btn: 1px solid rgb(36, 36, 36);
+    --color-base-bg: rgb(250, 250, 250);
+    --bg-image: url(../dist/dcfac7ae323295903005.jpg) center/cover;
+    --color-btn-bg: rgb(220, 220, 220);
+    --color-div-bg: rgba(238, 243, 245, 0.493);
+    --color-div-text: white;
+    --color-icon: white;
+}
+
+:root.dark {
+      --bg-image: url(../dist/82d5c7b4331754355fd0.jpg) center/cover;
+      --border-btn: 1px solid rgb(220, 220, 220);
+      --color-base-bg :  #313c47;
+      --color-btn-bg: rgb(36, 36, 36);
+      --color-div-bg: rgba(67, 67, 85, 0.493);
+      --color-div-text: white;
+      --color-icon: #8d8c8c;
+
+    }
+    
+.nav-bar {
+      background: var(--color-div-bg);
+      color: var(--color-div-text);
+    }
+
+.weather-app-body {
+        background: var(--color-div-bg);
+        --color-div-text: white;
+
+}
+
+.nav-icon{
+        fill: var(--color-icon);
+    }
+    
+ body {
+      background: var(--bg-image);
+      padding: 10px;
+    }
+  

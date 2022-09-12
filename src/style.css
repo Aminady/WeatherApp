@@ -15,6 +15,7 @@
 }
 
 body {
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -22,7 +23,6 @@ body {
     align-items: center;}
 
 div {
-    /* margin-top: 30px; */
     padding: 10px;
 }
 
@@ -36,11 +36,12 @@ header {
     background: var(--color-base-bg);
     border-radius: 45px;
     width: 90%;
-    height: 80px;
+    height: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: start;
     justify-items: stretch;
+    align-items: center;
+    align-content: center;
 }
 
 .title {
@@ -80,9 +81,9 @@ input[type = "text"] {
 .weather-app-body {
     margin-top: 50px;
     width: 400px;
-    height: 500px;
+    height: 450px;
     border-radius: 15px;
-    background: #444444;
+    /* background: #444444; */
 }
 
 .weather-icon {
@@ -117,10 +118,25 @@ input[type = "text"] {
     gap: 20px;
 }
 
-.sun{
+.sun, .cloud, .fog, .snow, .rain, .thunder{
     width: 200px;
     height: 200px;
+}
+
+.sun {
     fill: rgb(241, 241, 99);
+}
+
+.cloud {
+    fill: rgb(141, 139, 139);
+}
+
+.fog {
+    fill: rgba(117, 90, 90, 0.877);
+}
+
+.rain {
+    fill: white;
 }
 
 .sun-course {

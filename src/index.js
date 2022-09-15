@@ -1,6 +1,7 @@
 import './style.css';
 import './darkmode.css';
-import './createHTMLElements'
+import './mobile.css';
+import './createHTMLElements';
 import requestWeatherAPI from './weatherApp'
 
 let userInput = document.getElementById('search-bar');

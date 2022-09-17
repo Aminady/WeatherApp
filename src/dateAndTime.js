@@ -12,11 +12,5 @@ function getSunsetAndSunriseTime(input) {
     return hhmm
 };
 
-// function getTimeNow() { 
-//     let date = new Date();
-//     let hhmm = date.toLocaleTimeString().slice(0, 5);
-//     // return hhmm
-//     console.log(hhmm);
-// };
-// getTimeNow()
+
 export {dateParser, getSunsetAndSunriseTime}

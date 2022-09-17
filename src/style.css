@@ -82,10 +82,9 @@ input[type = "text"] {
 
 .weather-app-body {
     margin-top: 50px;
-    width: 400px;
+    width: 450px;
     height: 480px;
     border-radius: 15px;
-    /* background: #444444; */
 }
 
 .weather-icon {
@@ -115,9 +114,8 @@ input[type = "text"] {
 .temp-weather-date {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: baseline;
-    gap: 20px;
 }
 
 .sun, .cloud, .fog, .snow, .rain, .thunder, .error-icon{

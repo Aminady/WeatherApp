@@ -11,7 +11,7 @@ let icon = document.querySelector('.weather-icon');
 
 
 async function requestWeatherAPI(input) {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=bf6a7f8b83a17833aa9772415f2e3e57`, {mode : "cors"})
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=bf6a7f8b83a17833aa9772415f2e3e57`, {mode : "cors"})
     const weatherData = await response.json();
     try { 
         country.textContent = weatherData.name + ", " + weatherData.sys.country;

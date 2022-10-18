@@ -11,7 +11,7 @@ let icon = document.querySelector('.weather-icon');
 
 
 async function requestWeatherAPI(input) {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=bf6a7f8b83a17833aa9772415f2e3e57`)
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=bf6a7f8b83a17833aa9772415f2e3e57`, {mode: 'cors'})
     const weatherData = await response.json();
     try { 
         country.textContent = weatherData.name + ", " + weatherData.sys.country;
@@ -37,7 +37,7 @@ async function requestWeatherAPI(input) {
 };
 
 async function requestLocalisation() { 
-    const response = await fetch('https://ipgeolocation.abstractapi.com/v1/?api_key=18f81c5c2973449488cd1ce29cfea360');
+    const response = await fetch('https://ipgeolocation.abstractapi.com/v1/?api_key=18f81c5c2973449488cd1ce29cfea360', {mode: 'cors'});
     const locData = await response.json();
     try {
       requestWeatherAPI(locData.city);

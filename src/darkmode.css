@@ -4,7 +4,7 @@
   --color-btn-bg: rgb(220, 220, 220);
   --color-div-bg: rgba(238, 243, 245, 0.493);
   --color-div-text: white;
-  --color-icon: pink;
+  --color-icon: white;
   --btn-on-hover: rgb(243, 201, 123);
 }
 
@@ -14,7 +14,7 @@
     --color-btn-bg: rgb(220, 220, 220);
     --color-div-bg: rgba(238, 243, 245, 0.493);
     --color-div-text: white;
-    --color-icon: pink;
+    --color-icon: white;
     --btn-on-hover: rgb(243, 201, 123);
 }
 

@@ -40,27 +40,44 @@ header {
     width: 40%;
     height: 60px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 9fr;
     justify-items: stretch;
     align-items: center;
     align-content: center;
 }
 
 .title {
-    font-size: 2.3em;
+    font-size: 2.1em;
+    margin-bottom: 30px;
 }
 
 .search-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+}
+
+.loupe-container {
     position: relative;
+    background: beige;
+    width: 30px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 6px 4px 9px #888888;
 }
 
 .loupe {
-    width: 40%;
-    height: 40%;
+    fill: rgb(112, 111, 110);
+    width: 60%;
+    height: 60%;
     cursor: pointer;
     position: absolute;
-    bottom: 12px;
-    right: -50px;
+    bottom: 4px;
+    right: 5px;
 }
 
 input[type = "text"] {
@@ -68,8 +85,9 @@ input[type = "text"] {
     color: black;
     border-radius: 5px;
     border: none;
-    width: 100%;
+    width: 80%;
     height: 25px;
+    box-shadow: 6px 4px 9px #888888;
 }
 
 .nav-bar-icons{
@@ -92,7 +110,7 @@ input[type = "text"] {
     justify-content: center;
 }
 
-.dark-mode {
+.moon {
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -150,7 +168,6 @@ input[type = "text"] {
 .nav-icon {
     width: 30px;
     height: 30px;
-    cursor: pointer;
 }
 
 .sidenav-element-container {
@@ -168,17 +185,17 @@ input[type = "text"] {
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: var(--color-base-bg);
+    background-color: var(--color-div-bg);
     padding-top: 60px;
     transition: left 0.5s ease;
 }
 
 /* Sidenav menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 28px;
-    color: pink;
+    color: var(--color-div-text);
     /* color: var(--color-div-text); */
     display: block;
     transition: 0.3s;
@@ -203,7 +220,7 @@ input[type = "text"] {
     .sidenav .close {
         position: absolute;
         top: 0;
-        right: 25px;
+        right: 10px;
         font-size: 36px;
     }
     

@@ -37,10 +37,10 @@ header {
 .nav-bar {
     background: var(--color-base-bg);
     border-radius: 45px;
-    width: 90%;
+    width: 40%;
     height: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     justify-items: stretch;
     align-items: center;
     align-content: center;
@@ -153,6 +153,13 @@ input[type = "text"] {
     cursor: pointer;
 }
 
+.sidenav-element-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
 /* Sidenav menu */
 .sidenav {
     height: 100%;
@@ -170,7 +177,7 @@ input[type = "text"] {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 28px;
     color: pink;
     /* color: var(--color-div-text); */
     display: block;

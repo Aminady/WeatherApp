@@ -4,7 +4,8 @@
   --color-btn-bg: rgb(220, 220, 220);
   --color-div-bg: rgba(238, 243, 245, 0.493);
   --color-div-text: white;
-  --color-icon: white;
+  --color-icon: pink;
+  --btn-on-hover: rgb(243, 201, 123);
 }
 
 :root.light {
@@ -13,7 +14,8 @@
     --color-btn-bg: rgb(220, 220, 220);
     --color-div-bg: rgba(238, 243, 245, 0.493);
     --color-div-text: white;
-    --color-icon: white;
+    --color-icon: pink;
+    --btn-on-hover: rgb(243, 201, 123);
 }
 
 :root.dark {
@@ -23,7 +25,7 @@
       --color-div-bg: rgba(67, 67, 85, 0.493);
       --color-div-text: white;
       --color-icon: #8d8c8c;
-
+      --btn-on-hover: rgb(144, 224, 235);
     }
     
 .nav-bar {

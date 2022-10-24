@@ -19,6 +19,5 @@ localize.addEventListener('click', requestLocalisation);
 search.addEventListener('click', () => {
     requestWeatherAPI(userInput.value);
 });
-
   
 

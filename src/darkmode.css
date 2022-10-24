@@ -5,27 +5,35 @@
   --color-div-bg: rgba(238, 243, 245, 0.493);
   --color-div-text: white;
   --color-icon: white;
-  --btn-on-hover: rgb(243, 201, 123);
+  --btn-on-hover: #fda692;
+  --sidenav-mobile-bg: rgba(240, 178, 212, 0.925);
+  --sidenav-mobile-color: rgb(227, 240, 54);
+  --burger-color: #fda692;
 }
 
 :root.light {
-    --color-base-bg: rgb(250, 250, 250);
-    --bg-image: url(https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1) center/cover;
-    --color-btn-bg: rgb(220, 220, 220);
-    --color-div-bg: rgba(238, 243, 245, 0.493);
-    --color-div-text: white;
-    --color-icon: white;
-    --btn-on-hover: rgb(243, 201, 123);
+  --color-base-bg: rgb(250, 250, 250);
+  --bg-image: url(https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1) center/cover;
+  --color-btn-bg: rgb(220, 220, 220);
+  --color-div-bg: rgba(238, 243, 245, 0.493);
+  --color-div-text: white;
+  --color-icon: white;
+  --btn-on-hover: #fda692;
+  --sidenav-mobile-bg: rgba(240, 178, 212, 0.925);
+  --sidenav-mobile-color: rgb(227, 240, 54);
+  --burger-color: #fda692;
 }
-
 :root.dark {
-      --bg-image: url(https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1275&dpr=1) center/cover;
+  --bg-image: url(https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1275&dpr=1) center/cover;
       --border-btn: 1px solid rgb(220, 220, 220);
       --color-base-bg :  #313c47;
       --color-div-bg: rgba(67, 67, 85, 0.493);
       --color-div-text: white;
       --color-icon: #8d8c8c;
       --btn-on-hover: rgb(144, 224, 235);
+      --sidenav-mobile-bg: rgba(50, 59, 102, 0.993);
+      --sidenav-mobile-color: rgb(160, 160, 238);
+      --burger-color: rgb(174, 174, 235);
     }
     
 .nav-bar {

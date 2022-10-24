@@ -1,4 +1,4 @@
-import {dateParser, getSunsetAndSunriseTime} from './dateAndTime';
+import {dateParser, getSunsetAndSunriseTime, getLocalTime} from './dateAndTime';
 import {capitalizeFirstLetter, getSvg} from './extras';
 
 let country = document.querySelector('.country');

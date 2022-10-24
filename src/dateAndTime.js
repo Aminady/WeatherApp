@@ -12,5 +12,8 @@ function getSunsetAndSunriseTime(input) {
     return hhmm
 };
 
-
-export {dateParser, getSunsetAndSunriseTime}
+function getLocalTime(input) { 
+    let s= new Date().toLocaleString().slice(11, 16);
+    return s
+}
+export {dateParser, getSunsetAndSunriseTime, getLocalTime}

@@ -13,7 +13,7 @@ function getSunsetAndSunriseTime(input) {
 };
 
 function getLocalTime(input) { 
-    let s= new Date().toLocaleString().slice(11, 16);
-    return s
+    let localTime = new Date().toLocaleString().slice(11, 17);
+    return localTime
 }
 export {dateParser, getSunsetAndSunriseTime, getLocalTime}

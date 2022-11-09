@@ -19,5 +19,8 @@ localize.addEventListener('click', requestLocalisation);
 search.addEventListener('click', () => {
     requestWeatherAPI(userInput.value);
 });
-  
+
+const num = [187, 66, '10000', 5, -9]  
+console.log('Max = ' + Math.max(...num));
+console.log('Min = ' + Math.min(...num));
 

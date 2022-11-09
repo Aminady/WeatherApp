@@ -58,17 +58,17 @@ function getNightSvg(parameter1, parameter2) {
         } 
 };
 
-function dayAndNight(day, night) {
-    let localTime = new Date().toLocaleString().slice(11, 17);
-    if(localTime == day) {
-        // return getDaySvg(weatherData.weather[0].id, icon)
-        return true
-    } else if(localTime == night) {
-        return false
-        // return getNightSvg(weatherData.weather[0].id, icon)
-    }
-}
-dayAndNight('11:26', '11:27')
+// function dayAndNight(day, night) {
+//     let localTime = new Date().toLocaleString().slice(11, 17);
+//     if(localTime == day) {
+//         // return getDaySvg(weatherData.weather[0].id, icon)
+//         return true
+//     } else if(localTime == night) {
+//         return false
+//         // return getNightSvg(weatherData.weather[0].id, icon)
+//     }
+// }
+// dayAndNight('11:26', '11:27')
 // dayAndNight(getSunsetAndSunriseTime(weatherData.sys.sunrise + weatherData.timezone), getSunsetAndSunriseTime(weatherData.sys.sunset + weatherData.timezone))
 
 // function getSvg(parameter1, parameter2) {

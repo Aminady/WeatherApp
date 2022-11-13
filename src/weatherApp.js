@@ -1,5 +1,5 @@
 import {dateParser, getSunsetAndSunriseTime, getLocalTime} from './dateAndTime';
-import {capitalizeFirstLetter, getDaySvg, getNightSvg} from './extras';
+import {capitalizeFirstLetter, getSvg, getDaySvg, getNightSvg} from './extras';
 
 let country = document.querySelector('.country');
 let temperature = document.querySelector('.temperature');
@@ -21,7 +21,7 @@ async function requestWeatherAPI(input) {
         date.textContent = dateParser();
         sunrise.textContent = `Sunrise : ${getSunsetAndSunriseTime(weatherData.sys.sunrise + weatherData.timezone)}`;
         sunset.textContent = `Sunset : ${getSunsetAndSunriseTime(weatherData.sys.sunset + weatherData.timezone)}`;
-        getDaySvg(weatherData.weather[0].id, icon);
+        getSvg(weatherData.weather[0].id, icon);
     } catch(err) {
         if(weatherData.message == "city not found"){
             country.textContent = 'Location not found.';

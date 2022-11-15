@@ -21,7 +21,7 @@ async function requestWeatherAPI(input) {
         date.textContent = dateParser();
         sunrise.textContent = `Sunrise : ${getSunsetAndSunriseTime(weatherData.sys.sunrise + weatherData.timezone)}`;
         sunset.textContent = `Sunset : ${getSunsetAndSunriseTime(weatherData.sys.sunset + weatherData.timezone)}`;
-        getSvg(weatherData.weather[0].id, icon);
+        getDaySvg(weatherData.weather[0].id, icon);
     } catch(err) {
         if(weatherData.message == "city not found"){
             country.textContent = 'Location not found.';
